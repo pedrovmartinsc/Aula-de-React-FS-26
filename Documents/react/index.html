@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>React/</title>
+</head>
+
+<body>
+    <main id="container"></main>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+
+        function Formo(){return(
+            <form>
+                <Inputs4/>
+                <Cheackbox2></Cheackbox2>
+                <Button8/>
+                <Smalls9/>
+
+                </form>
+        );
+
+        };
+        function Inputs4(){return(
+            <div class="inputs">
+                <input type="text" placeholder="Digite seu nome de usuário ou e-mail" id="Usuário"/>
+                <input type="password" placeholder="Senha" id="senha"/>
+                </div>
+
+        );};
+                function Cheackbox2(){return(
+                <div class="show" id="show">
+                    <input type="checkbox"/>
+                    <label>Mostrar Senha</label>
+
+                    
+                    </div>
+        );};
+                        function Button8(){return(
+                   <button>Entrar</button>
+        );};
+                        function Smalls9(){return(
+                     
+                    <div class="smalls">
+                        <small>Esqueceu a senha? Recupere aqui
+                            </small>
+                                              <small>Não possui cadastro? Cadastre-se aqui
+                            </small>
+                        
+                        </div>
+        );};
+        
+        
+   
+
+      const App = (
+         <>
+               <Formo>
+
+                </Formo>
+            </>
+        );
+
+
+        const container = document.querySelector('#container');
+        const root = ReactDOM.createRoot(container);
+        root.render(App);
+
+    </script>
+</body>
+
+</html>
